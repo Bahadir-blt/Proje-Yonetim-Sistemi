@@ -495,7 +495,7 @@
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(324, 140);
+            this.panel4.Location = new System.Drawing.Point(310, 146);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(333, 135);
@@ -532,7 +532,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(4, 36);
+            this.label5.Location = new System.Drawing.Point(7, 36);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 57);
@@ -561,7 +561,7 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(691, 140);
+            this.panel5.Location = new System.Drawing.Point(678, 146);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(333, 135);
@@ -627,7 +627,7 @@
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.label12);
-            this.panel6.Location = new System.Drawing.Point(1056, 140);
+            this.panel6.Location = new System.Drawing.Point(1061, 146);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(333, 135);
@@ -665,7 +665,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label11.Location = new System.Drawing.Point(4, 36);
+            this.label11.Location = new System.Drawing.Point(13, 36);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(97, 57);
@@ -694,7 +694,7 @@
             this.panel7.Controls.Add(this.label13);
             this.panel7.Controls.Add(this.label14);
             this.panel7.Controls.Add(this.label15);
-            this.panel7.Location = new System.Drawing.Point(1421, 140);
+            this.panel7.Location = new System.Drawing.Point(1452, 146);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(333, 135);
@@ -759,13 +759,11 @@
             this.panel8.Controls.Add(this.label17);
             this.panel8.Controls.Add(this.label16);
             this.panel8.Controls.Add(this.pictureBox12);
-            this.panel8.Location = new System.Drawing.Point(327, 319);
+            this.panel8.Location = new System.Drawing.Point(310, 332);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(697, 559);
-            this.panel8.TabIndex = 7;
-            this.panel8.UseWaitCursor = true;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            this.panel8.TabIndex = 8;
             // 
             // pictureBox13
             // 
@@ -778,7 +776,6 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 10;
             this.pictureBox13.TabStop = false;
-            this.pictureBox13.UseWaitCursor = true;
             // 
             // label17
             // 
@@ -791,7 +788,6 @@
             this.label17.Size = new System.Drawing.Size(624, 60);
             this.label17.TabIndex = 9;
             this.label17.Text = resources.GetString("label17.Text");
-            this.label17.UseWaitCursor = true;
             // 
             // label16
             // 
@@ -804,7 +800,6 @@
             this.label16.Size = new System.Drawing.Size(150, 23);
             this.label16.TabIndex = 8;
             this.label16.Text = "Item Sold Amount";
-            this.label16.UseWaitCursor = true;
             // 
             // pictureBox12
             // 
@@ -816,7 +811,6 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 7;
             this.pictureBox12.TabStop = false;
-            this.pictureBox12.UseWaitCursor = true;
             // 
             // panel9
             // 
@@ -825,12 +819,11 @@
             this.panel9.Controls.Add(this.label18);
             this.panel9.Controls.Add(this.label19);
             this.panel9.Controls.Add(this.pictureBox15);
-            this.panel9.Location = new System.Drawing.Point(1057, 319);
+            this.panel9.Location = new System.Drawing.Point(1061, 332);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(332, 325);
-            this.panel9.TabIndex = 8;
-            this.panel9.UseWaitCursor = true;
+            this.panel9.TabIndex = 11;
             // 
             // pictureBox14
             // 
@@ -843,7 +836,6 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 10;
             this.pictureBox14.TabStop = false;
-            this.pictureBox14.UseWaitCursor = true;
             // 
             // label18
             // 
@@ -856,7 +848,6 @@
             this.label18.Size = new System.Drawing.Size(257, 40);
             this.label18.TabIndex = 9;
             this.label18.Text = "Lorem Ipsum is simply dummy text of\r\nthe printing and typesetting industry.";
-            this.label18.UseWaitCursor = true;
             // 
             // label19
             // 
@@ -869,7 +860,6 @@
             this.label19.Size = new System.Drawing.Size(150, 23);
             this.label19.TabIndex = 8;
             this.label19.Text = "Item Sold Amount";
-            this.label19.UseWaitCursor = true;
             // 
             // pictureBox15
             // 
@@ -881,7 +871,6 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 7;
             this.pictureBox15.TabStop = false;
-            this.pictureBox15.UseWaitCursor = true;
             // 
             // panel10
             // 
@@ -890,12 +879,11 @@
             this.panel10.Controls.Add(this.label20);
             this.panel10.Controls.Add(this.label21);
             this.panel10.Controls.Add(this.pictureBox17);
-            this.panel10.Location = new System.Drawing.Point(1421, 319);
+            this.panel10.Location = new System.Drawing.Point(1452, 332);
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(332, 325);
-            this.panel10.TabIndex = 9;
-            this.panel10.UseWaitCursor = true;
+            this.panel10.TabIndex = 11;
             // 
             // pictureBox16
             // 
@@ -908,7 +896,6 @@
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 10;
             this.pictureBox16.TabStop = false;
-            this.pictureBox16.UseWaitCursor = true;
             // 
             // label20
             // 
@@ -921,7 +908,6 @@
             this.label20.Size = new System.Drawing.Size(257, 40);
             this.label20.TabIndex = 9;
             this.label20.Text = "Lorem Ipsum is simply dummy text of\r\nthe printing and typesetting industry.";
-            this.label20.UseWaitCursor = true;
             // 
             // label21
             // 
@@ -934,7 +920,6 @@
             this.label21.Size = new System.Drawing.Size(150, 23);
             this.label21.TabIndex = 8;
             this.label21.Text = "Item Sold Amount";
-            this.label21.UseWaitCursor = true;
             // 
             // pictureBox17
             // 
@@ -946,7 +931,6 @@
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 7;
             this.pictureBox17.TabStop = false;
-            this.pictureBox17.UseWaitCursor = true;
             // 
             // panel11
             // 
@@ -960,12 +944,11 @@
             this.panel11.Controls.Add(this.button14);
             this.panel11.Controls.Add(this.button13);
             this.panel11.Controls.Add(this.label22);
-            this.panel11.Location = new System.Drawing.Point(1056, 683);
+            this.panel11.Location = new System.Drawing.Point(1061, 697);
             this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(699, 194);
-            this.panel11.TabIndex = 10;
-            this.panel11.UseWaitCursor = true;
+            this.panel11.TabIndex = 12;
             // 
             // button20
             // 
@@ -981,7 +964,6 @@
             this.button20.Size = new System.Drawing.Size(77, 70);
             this.button20.TabIndex = 18;
             this.button20.UseVisualStyleBackColor = false;
-            this.button20.UseWaitCursor = true;
             // 
             // button19
             // 
@@ -997,7 +979,6 @@
             this.button19.Size = new System.Drawing.Size(77, 70);
             this.button19.TabIndex = 17;
             this.button19.UseVisualStyleBackColor = false;
-            this.button19.UseWaitCursor = true;
             // 
             // button18
             // 
@@ -1013,7 +994,6 @@
             this.button18.Size = new System.Drawing.Size(77, 70);
             this.button18.TabIndex = 16;
             this.button18.UseVisualStyleBackColor = false;
-            this.button18.UseWaitCursor = true;
             // 
             // button17
             // 
@@ -1029,7 +1009,6 @@
             this.button17.Size = new System.Drawing.Size(77, 70);
             this.button17.TabIndex = 15;
             this.button17.UseVisualStyleBackColor = false;
-            this.button17.UseWaitCursor = true;
             // 
             // button16
             // 
@@ -1045,7 +1024,6 @@
             this.button16.Size = new System.Drawing.Size(77, 70);
             this.button16.TabIndex = 14;
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.UseWaitCursor = true;
             // 
             // button15
             // 
@@ -1061,7 +1039,6 @@
             this.button15.Size = new System.Drawing.Size(77, 70);
             this.button15.TabIndex = 13;
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.UseWaitCursor = true;
             // 
             // button14
             // 
@@ -1077,7 +1054,6 @@
             this.button14.Size = new System.Drawing.Size(77, 70);
             this.button14.TabIndex = 12;
             this.button14.UseVisualStyleBackColor = false;
-            this.button14.UseWaitCursor = true;
             // 
             // button13
             // 
@@ -1093,7 +1069,6 @@
             this.button13.Size = new System.Drawing.Size(77, 70);
             this.button13.TabIndex = 11;
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.UseWaitCursor = true;
             // 
             // label22
             // 
@@ -1106,11 +1081,9 @@
             this.label22.Size = new System.Drawing.Size(624, 60);
             this.label22.TabIndex = 10;
             this.label22.Text = resources.GetString("label22.Text");
-            this.label22.UseWaitCursor = true;
             // 
             // Form1
             // 
-            this.AcceptButton = this.button13;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
@@ -1224,10 +1197,10 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label label18;
@@ -1239,8 +1212,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button18;
@@ -1248,6 +1219,8 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label22;
     }
 }
 

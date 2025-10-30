@@ -1,6 +1,6 @@
 ﻿namespace UI_UX_Dashboard_P1
 {
-    partial class ProjectsForm
+    partial class Projects
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // ProjectsForm
+            // Projects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1586, 728);
-            this.Name = "ProjectsForm";
-            this.Text = "Char";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Projects";
+            this.Text = "Projects";
+            this.Load += new System.EventHandler(this.Projects_Load);
             this.ResumeLayout(false);
 
         }

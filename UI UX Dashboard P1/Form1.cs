@@ -81,16 +81,16 @@ namespace UI_UX_Dashboard_P1
 
         private void button6_Click(object sender, EventArgs e)
         {
-           ProjectsForm frm2gcs = new ProjectsForm();
+           Projects frm2gcs = new Projects();
             frm2gcs.Show();
            
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-          Form1 frm1gcs = new Form1();
+            Form1 frm1gcs = new Form1();
             frm1gcs.Show();
-          
+
         }
 
         private void Logout_Click(object sender, EventArgs e)
@@ -101,6 +101,11 @@ namespace UI_UX_Dashboard_P1
         }
 
         private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel12_Paint(object sender, PaintEventArgs e)
         {
 
         }
