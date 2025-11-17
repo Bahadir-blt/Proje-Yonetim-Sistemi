@@ -117,7 +117,8 @@ namespace UI_UX_Dashboard_P1
 
         private void button10_Click(object sender, EventArgs e)
         {
-           
+          Ekip frm3gcs = new Ekip();
+            frm3gcs.Show();
         }
     }
 }
