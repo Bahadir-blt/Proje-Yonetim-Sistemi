@@ -278,7 +278,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.button10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button10.Location = new System.Drawing.Point(56, 295);
+            this.button10.Location = new System.Drawing.Point(56, 289);
             this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(207, 43);
@@ -287,6 +287,7 @@
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
             this.button10.UseWaitCursor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // pictureBox6
             // 
@@ -368,21 +369,22 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button7.Location = new System.Drawing.Point(56, 118);
+            this.button7.Location = new System.Drawing.Point(56, 123);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(207, 49);
             this.button7.TabIndex = 5;
-            this.button7.Text = "Görevler";
+            this.button7.Text = "Görev Yönetimi";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.UseWaitCursor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(16, 126);
+            this.pictureBox3.Location = new System.Drawing.Point(13, 124);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 30);
@@ -427,10 +429,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button5.Location = new System.Drawing.Point(56, 27);
+            this.button5.Location = new System.Drawing.Point(56, 11);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(207, 30);
+            this.button5.Size = new System.Drawing.Size(207, 65);
             this.button5.TabIndex = 1;
             this.button5.Text = "Ana Sayfa";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -764,6 +766,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(697, 559);
             this.panel8.TabIndex = 8;
+            this.panel8.UseWaitCursor = true;
             // 
             // pictureBox13
             // 
@@ -776,6 +779,7 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 10;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.UseWaitCursor = true;
             // 
             // label17
             // 
@@ -788,6 +792,7 @@
             this.label17.Size = new System.Drawing.Size(624, 60);
             this.label17.TabIndex = 9;
             this.label17.Text = resources.GetString("label17.Text");
+            this.label17.UseWaitCursor = true;
             // 
             // label16
             // 
@@ -800,6 +805,7 @@
             this.label16.Size = new System.Drawing.Size(150, 23);
             this.label16.TabIndex = 8;
             this.label16.Text = "Item Sold Amount";
+            this.label16.UseWaitCursor = true;
             // 
             // pictureBox12
             // 
@@ -811,6 +817,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 7;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.UseWaitCursor = true;
             // 
             // panel9
             // 
@@ -824,6 +831,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(332, 325);
             this.panel9.TabIndex = 11;
+            this.panel9.UseWaitCursor = true;
             // 
             // pictureBox14
             // 
@@ -836,6 +844,7 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 10;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.UseWaitCursor = true;
             // 
             // label18
             // 
@@ -848,6 +857,7 @@
             this.label18.Size = new System.Drawing.Size(257, 40);
             this.label18.TabIndex = 9;
             this.label18.Text = "Lorem Ipsum is simply dummy text of\r\nthe printing and typesetting industry.";
+            this.label18.UseWaitCursor = true;
             // 
             // label19
             // 
@@ -860,6 +870,7 @@
             this.label19.Size = new System.Drawing.Size(150, 23);
             this.label19.TabIndex = 8;
             this.label19.Text = "Item Sold Amount";
+            this.label19.UseWaitCursor = true;
             // 
             // pictureBox15
             // 
@@ -871,6 +882,7 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 7;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.UseWaitCursor = true;
             // 
             // panel10
             // 
@@ -884,6 +896,7 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(332, 325);
             this.panel10.TabIndex = 11;
+            this.panel10.UseWaitCursor = true;
             // 
             // pictureBox16
             // 
@@ -896,6 +909,7 @@
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 10;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.UseWaitCursor = true;
             // 
             // label20
             // 
@@ -908,6 +922,7 @@
             this.label20.Size = new System.Drawing.Size(257, 40);
             this.label20.TabIndex = 9;
             this.label20.Text = "Lorem Ipsum is simply dummy text of\r\nthe printing and typesetting industry.";
+            this.label20.UseWaitCursor = true;
             // 
             // label21
             // 
@@ -920,6 +935,7 @@
             this.label21.Size = new System.Drawing.Size(150, 23);
             this.label21.TabIndex = 8;
             this.label21.Text = "Item Sold Amount";
+            this.label21.UseWaitCursor = true;
             // 
             // pictureBox17
             // 
@@ -931,6 +947,7 @@
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 7;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.UseWaitCursor = true;
             // 
             // panel11
             // 
@@ -949,6 +966,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(699, 194);
             this.panel11.TabIndex = 12;
+            this.panel11.UseWaitCursor = true;
             // 
             // button20
             // 
@@ -964,6 +982,7 @@
             this.button20.Size = new System.Drawing.Size(77, 70);
             this.button20.TabIndex = 18;
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.UseWaitCursor = true;
             // 
             // button19
             // 
@@ -979,6 +998,7 @@
             this.button19.Size = new System.Drawing.Size(77, 70);
             this.button19.TabIndex = 17;
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.UseWaitCursor = true;
             // 
             // button18
             // 
@@ -994,6 +1014,7 @@
             this.button18.Size = new System.Drawing.Size(77, 70);
             this.button18.TabIndex = 16;
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.UseWaitCursor = true;
             // 
             // button17
             // 
@@ -1009,6 +1030,7 @@
             this.button17.Size = new System.Drawing.Size(77, 70);
             this.button17.TabIndex = 15;
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.UseWaitCursor = true;
             // 
             // button16
             // 
@@ -1024,6 +1046,7 @@
             this.button16.Size = new System.Drawing.Size(77, 70);
             this.button16.TabIndex = 14;
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.UseWaitCursor = true;
             // 
             // button15
             // 
@@ -1039,6 +1062,7 @@
             this.button15.Size = new System.Drawing.Size(77, 70);
             this.button15.TabIndex = 13;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.UseWaitCursor = true;
             // 
             // button14
             // 
@@ -1054,6 +1078,7 @@
             this.button14.Size = new System.Drawing.Size(77, 70);
             this.button14.TabIndex = 12;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.UseWaitCursor = true;
             // 
             // button13
             // 
@@ -1069,6 +1094,7 @@
             this.button13.Size = new System.Drawing.Size(77, 70);
             this.button13.TabIndex = 11;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.UseWaitCursor = true;
             // 
             // label22
             // 
@@ -1081,6 +1107,7 @@
             this.label22.Size = new System.Drawing.Size(624, 60);
             this.label22.TabIndex = 10;
             this.label22.Text = resources.GetString("label22.Text");
+            this.label22.UseWaitCursor = true;
             // 
             // Form1
             // 

@@ -193,7 +193,7 @@
             this.MaximizeBox = false;
             this.Name = "LoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "e";
+            this.Text = "Ardenix Proje Yönetim Sistemi";
             this.Load += new System.EventHandler(this.LoginPage_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
