@@ -38,12 +38,13 @@ namespace UI_UX_Dashboard_P1
         private void RaporlarForm_Load(object sender, EventArgs e)
         {
             cmbRaporTuru.Items.Add("Tüm Projeler");
-            cmbRaporTuru.Items.Add("Aktif Projeler");
-            cmbRaporTuru.Items.Add("Tamamlanan Projeler");
-            cmbRaporTuru.Items.Add("Geciken Projeler");
-            cmbRaporTuru.Items.Add("Teslim Tarihine Kalan Günler");
+            cmbRaporTuru.Items.Add("Beklemede");
+            cmbRaporTuru.Items.Add("Devam Ediyor");
+            cmbRaporTuru.Items.Add("Tamamlandı");
 
             cmbRaporTuru.SelectedIndex = 0;
+
+
         }
 
         private void btnGetir_Click(object sender, EventArgs e)
@@ -52,11 +53,21 @@ namespace UI_UX_Dashboard_P1
 
             switch (secim)
             {
-                case "Tüm Projeler": TumProjeleriGetir(); break;
-                case "Aktif Projeler": AktifProjeleriGetir(); break;
-                case "Tamamlanan Projeler": TamamlananProjeleriGetir(); break;
-                case "Geciken Projeler": GecikenProjeleriGetir(); break;
-                case "Teslim Tarihine Kalan Günler": KalanGunRaporu(); break;
+                case "Tüm Projeler":
+                    TumProjeleriGetir();
+                    break;
+
+                case "Beklemede":
+                    BeklemedeProjeleriGetir();
+                    break;
+
+                case "Devam Ediyor":
+                    DevamEdenProjeleriGetir();
+                    break;
+
+                case "Tamamlandı":
+                    TamamlananProjeleriGetir();
+                    break;
             }
         }
 
@@ -72,15 +83,27 @@ namespace UI_UX_Dashboard_P1
             }
         }
 
-        private void AktifProjeleriGetir()
+        private void BeklemedeProjeleriGetir()
         {
             using (SqlConnection conn = new SqlConnection(connStr))
             {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Projects WHERE Status='Aktif'", conn);
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Projects WHERE Status='Beklemede'", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dgRapor.DataSource = dt;
-                lblDurum.Text = dt.Rows.Count + " aktif proje bulundu.";
+                lblDurum.Text = dt.Rows.Count + " bekleyen proje bulundu.";
+            }
+        }
+
+        private void DevamEdenProjeleriGetir()
+        {
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Projects WHERE Status='Devam Ediyor'", conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgRapor.DataSource = dt;
+                lblDurum.Text = dt.Rows.Count + " devam eden proje bulundu.";
             }
         }
 
@@ -91,49 +114,14 @@ namespace UI_UX_Dashboard_P1
                 SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Projects WHERE Status='Tamamlandı'", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+
                 dgRapor.DataSource = dt;
                 lblDurum.Text = dt.Rows.Count + " tamamlanan proje bulundu.";
             }
         }
 
-        private void GecikenProjeleriGetir()
-        {
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                string sql = @"
-                SELECT *, 
-                DATEDIFF(day, CompletionDate, GETDATE()) AS GecikmeGun
-                FROM Projects
-                WHERE CompletionDate < GETDATE()
-                AND Status!='Tamamlandı'";
 
-                SqlDataAdapter da = new SqlDataAdapter(sql, conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
 
-                dgRapor.DataSource = dt;
-                lblDurum.Text = dt.Rows.Count + " gecikmiş proje bulundu.";
-            }
-        }
-
-        private void KalanGunRaporu()
-        {
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                string sql = @"
-                SELECT *,
-                DATEDIFF(day, GETDATE(), CompletionDate) AS KalanGun
-                FROM Projects
-                ORDER BY KalanGun ASC";
-
-                SqlDataAdapter da = new SqlDataAdapter(sql, conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                dgRapor.DataSource = dt;
-                lblDurum.Text = "Projeler kalan güne göre sıralandı.";
-            }
-        }
 
 
         // ============================================================
