@@ -306,6 +306,16 @@ namespace UI_UX_Dashboard_P1
 
             e.HasMorePages = false;
         }
+
+        private void RaporlarForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbRaporTuru_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
