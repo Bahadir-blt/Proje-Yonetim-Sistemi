@@ -120,5 +120,16 @@ namespace UI_UX_Dashboard_P1
           Ekip frm3gcs = new Ekip();
             frm3gcs.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            RaporlarForm frm4gcs = new RaporlarForm();
+            frm4gcs.Show();
+        }
     }
 }

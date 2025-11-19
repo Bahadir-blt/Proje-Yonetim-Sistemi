@@ -143,6 +143,7 @@
             this.panel1.Size = new System.Drawing.Size(1815, 58);
             this.panel1.TabIndex = 0;
             this.panel1.UseWaitCursor = true;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button4
             // 
@@ -349,6 +350,7 @@
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.UseWaitCursor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // pictureBox4
             // 
