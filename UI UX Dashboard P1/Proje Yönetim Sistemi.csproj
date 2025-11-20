@@ -201,6 +201,7 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyXmlSerializer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Projects.cs">
       <SubType>Form</SubType>
@@ -225,6 +226,13 @@
     </Compile>
     <Compile Include="RaporlarForm.Designer.cs">
       <DependentUpon>RaporlarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoItem.Cs" />
+    <Compile Include="TodoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodoList.Designer.cs">
+      <DependentUpon>TodoList.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -253,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RaporlarForm.resx">
       <DependentUpon>RaporlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodoList.resx">
+      <DependentUpon>TodoList.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="ProjeYonetimSistemiDataSet.xsc">
@@ -293,6 +304,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\png-transparent-password-manager-computer-icons-password-strength-password-safe-chang-miscellaneous-password-strength-password-safe-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create-folder_16161548.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-folder_16161554.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rename-file_16161465.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11323820.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11323867.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11323877.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1237946.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2976286.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10426353.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\992664.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img.icons8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18436.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />

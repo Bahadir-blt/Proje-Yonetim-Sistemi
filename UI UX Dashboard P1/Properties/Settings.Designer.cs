@@ -33,5 +33,8 @@ namespace UI_UX_Dashboard_P1.Properties {
                 return ((string)(this["ProjeYonetimSistemiConnectionString"]));
             }
         }
+
+        public string Tema { get; internal set; }
+        public string KullanıcıAdı { get; internal set; }
     }
 }

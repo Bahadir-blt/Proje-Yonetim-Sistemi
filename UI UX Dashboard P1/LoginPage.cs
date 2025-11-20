@@ -54,8 +54,9 @@ namespace UI_UX_Dashboard_P1
                 Form1 gecis = new Form1();
                 gecis.Show();
                 this.Hide();
-            } 
-            else {
+            }
+            else
+            {
                 MessageBox.Show("Hatalı Kullanıcı Adı Veya Şifre");
             }
             con.Close();
@@ -68,4 +69,3 @@ namespace UI_UX_Dashboard_P1
         }
     }
 }
-    

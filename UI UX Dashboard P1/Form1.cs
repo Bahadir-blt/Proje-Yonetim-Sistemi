@@ -112,7 +112,8 @@ namespace UI_UX_Dashboard_P1
 
         private void button7_Click(object sender, EventArgs e)
         {
-          
+           TodoList frm5gcs = new TodoList();
+            frm5gcs.Show();
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -130,6 +131,11 @@ namespace UI_UX_Dashboard_P1
         {
             RaporlarForm frm4gcs = new RaporlarForm();
             frm4gcs.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+        
         }
     }
 }
