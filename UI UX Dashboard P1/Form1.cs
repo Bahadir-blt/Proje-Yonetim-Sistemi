@@ -112,8 +112,11 @@ namespace UI_UX_Dashboard_P1
 
         private void button7_Click(object sender, EventArgs e)
         {
-           TodoList frm5gcs = new TodoList();
-            frm5gcs.Show();
+           //TodoList frm5gcs = new TodoList();
+           // frm5gcs.Show();
+            TodoList login1 = new TodoList(); // Login ekranını yeniden oluştur
+            login1.Show();                      // Göster
+            this.Close();
         }
 
         private void button10_Click(object sender, EventArgs e)

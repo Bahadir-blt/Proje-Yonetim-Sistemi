@@ -37,13 +37,17 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnGetir = new System.Windows.Forms.Button();
+            this.btnExcelAktar = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.exportPdf = new System.Windows.Forms.Button();
+            this.lblRaporTuru = new System.Windows.Forms.Label();
+            this.cmbRaporTuru = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Logout = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button10 = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -55,18 +59,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnGetir = new System.Windows.Forms.Button();
-            this.btnExcelAktar = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
-            this.exportPdf = new System.Windows.Forms.Button();
-            this.lblRaporTuru = new System.Windows.Forms.Label();
-            this.cmbRaporTuru = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgRapor)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -186,6 +183,80 @@
             this.label1.Text = "ARDENİX PROJE YÖNETİM SİSTEMİ";
             this.label1.UseWaitCursor = true;
             // 
+            // btnGetir
+            // 
+            this.btnGetir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
+            this.btnGetir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGetir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGetir.ForeColor = System.Drawing.Color.White;
+            this.btnGetir.Location = new System.Drawing.Point(811, 121);
+            this.btnGetir.Name = "btnGetir";
+            this.btnGetir.Size = new System.Drawing.Size(118, 51);
+            this.btnGetir.TabIndex = 1;
+            this.btnGetir.Text = "Getir";
+            this.btnGetir.UseVisualStyleBackColor = false;
+            this.btnGetir.Click += new System.EventHandler(this.btnGetir_Click);
+            // 
+            // btnExcelAktar
+            // 
+            this.btnExcelAktar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(160)))), ((int)(((byte)(71)))));
+            this.btnExcelAktar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcelAktar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnExcelAktar.ForeColor = System.Drawing.Color.White;
+            this.btnExcelAktar.Location = new System.Drawing.Point(732, 622);
+            this.btnExcelAktar.Name = "btnExcelAktar";
+            this.btnExcelAktar.Size = new System.Drawing.Size(180, 50);
+            this.btnExcelAktar.TabIndex = 12;
+            this.btnExcelAktar.Text = "Excel\'e Aktar";
+            this.btnExcelAktar.UseVisualStyleBackColor = false;
+            this.btnExcelAktar.Click += new System.EventHandler(this.btnExcelAktar_Click);
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrint.ForeColor = System.Drawing.Color.White;
+            this.btnPrint.Location = new System.Drawing.Point(1115, 622);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(150, 50);
+            this.btnPrint.TabIndex = 13;
+            this.btnPrint.Text = "Yazdır";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            // 
+            // exportPdf
+            // 
+            this.exportPdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.exportPdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportPdf.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.exportPdf.ForeColor = System.Drawing.Color.White;
+            this.exportPdf.Location = new System.Drawing.Point(941, 622);
+            this.exportPdf.Name = "exportPdf";
+            this.exportPdf.Size = new System.Drawing.Size(150, 50);
+            this.exportPdf.TabIndex = 14;
+            this.exportPdf.Text = "Pdf\'e Aktar";
+            this.exportPdf.UseVisualStyleBackColor = false;
+            // 
+            // lblRaporTuru
+            // 
+            this.lblRaporTuru.AutoSize = true;
+            this.lblRaporTuru.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRaporTuru.Location = new System.Drawing.Point(315, 132);
+            this.lblRaporTuru.Name = "lblRaporTuru";
+            this.lblRaporTuru.Size = new System.Drawing.Size(109, 28);
+            this.lblRaporTuru.TabIndex = 15;
+            this.lblRaporTuru.Text = "Rapor Türü";
+            // 
+            // cmbRaporTuru
+            // 
+            this.cmbRaporTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRaporTuru.FormattingEnabled = true;
+            this.cmbRaporTuru.Location = new System.Drawing.Point(447, 136);
+            this.cmbRaporTuru.Name = "cmbRaporTuru";
+            this.cmbRaporTuru.Size = new System.Drawing.Size(335, 24);
+            this.cmbRaporTuru.TabIndex = 0;
+            this.cmbRaporTuru.SelectedIndexChanged += new System.EventHandler(this.cmbRaporTuru_SelectedIndexChanged);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
@@ -193,8 +264,6 @@
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.button7);
@@ -208,7 +277,7 @@
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(287, 653);
-            this.panel2.TabIndex = 10;
+            this.panel2.TabIndex = 16;
             this.panel2.UseWaitCursor = true;
             // 
             // Logout
@@ -218,7 +287,7 @@
             this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logout.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Logout.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Logout.Location = new System.Drawing.Point(56, 346);
+            this.Logout.Location = new System.Drawing.Point(56, 289);
             this.Logout.Margin = new System.Windows.Forms.Padding(4);
             this.Logout.Name = "Logout";
             this.Logout.Size = new System.Drawing.Size(207, 43);
@@ -232,7 +301,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.InitialImage")));
-            this.pictureBox7.Location = new System.Drawing.Point(13, 354);
+            this.pictureBox7.Location = new System.Drawing.Point(17, 298);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 30);
@@ -248,7 +317,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.button10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button10.Location = new System.Drawing.Point(56, 289);
+            this.button10.Location = new System.Drawing.Point(57, 231);
             this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(207, 43);
@@ -262,7 +331,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(16, 297);
+            this.pictureBox6.Location = new System.Drawing.Point(17, 238);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(32, 30);
@@ -270,36 +339,6 @@
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.UseWaitCursor = true;
-            // 
-            // button9
-            // 
-            this.button9.AutoSize = true;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button9.Location = new System.Drawing.Point(56, 240);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(207, 43);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Settings";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.UseWaitCursor = true;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(16, 240);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 30);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.UseWaitCursor = true;
             // 
             // button8
             // 
@@ -428,7 +467,7 @@
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1015, 46);
-            this.panel3.TabIndex = 11;
+            this.panel3.TabIndex = 17;
             this.panel3.UseWaitCursor = true;
             // 
             // label3
@@ -455,91 +494,17 @@
             this.label2.Text = "Raporlar";
             this.label2.UseWaitCursor = true;
             // 
-            // btnGetir
-            // 
-            this.btnGetir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(133)))), ((int)(((byte)(244)))));
-            this.btnGetir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGetir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGetir.ForeColor = System.Drawing.Color.White;
-            this.btnGetir.Location = new System.Drawing.Point(811, 121);
-            this.btnGetir.Name = "btnGetir";
-            this.btnGetir.Size = new System.Drawing.Size(118, 51);
-            this.btnGetir.TabIndex = 1;
-            this.btnGetir.Text = "Getir";
-            this.btnGetir.UseVisualStyleBackColor = false;
-            this.btnGetir.Click += new System.EventHandler(this.btnGetir_Click);
-            // 
-            // btnExcelAktar
-            // 
-            this.btnExcelAktar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(160)))), ((int)(((byte)(71)))));
-            this.btnExcelAktar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcelAktar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnExcelAktar.ForeColor = System.Drawing.Color.White;
-            this.btnExcelAktar.Location = new System.Drawing.Point(732, 622);
-            this.btnExcelAktar.Name = "btnExcelAktar";
-            this.btnExcelAktar.Size = new System.Drawing.Size(180, 50);
-            this.btnExcelAktar.TabIndex = 12;
-            this.btnExcelAktar.Text = "Excel\'e Aktar";
-            this.btnExcelAktar.UseVisualStyleBackColor = false;
-            this.btnExcelAktar.Click += new System.EventHandler(this.btnExcelAktar_Click);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.Location = new System.Drawing.Point(1115, 622);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(150, 50);
-            this.btnPrint.TabIndex = 13;
-            this.btnPrint.Text = "Yazdır";
-            this.btnPrint.UseVisualStyleBackColor = false;
-            // 
-            // exportPdf
-            // 
-            this.exportPdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.exportPdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exportPdf.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.exportPdf.ForeColor = System.Drawing.Color.White;
-            this.exportPdf.Location = new System.Drawing.Point(941, 622);
-            this.exportPdf.Name = "exportPdf";
-            this.exportPdf.Size = new System.Drawing.Size(150, 50);
-            this.exportPdf.TabIndex = 14;
-            this.exportPdf.Text = "Pdf\'e Aktar";
-            this.exportPdf.UseVisualStyleBackColor = false;
-            // 
-            // lblRaporTuru
-            // 
-            this.lblRaporTuru.AutoSize = true;
-            this.lblRaporTuru.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblRaporTuru.Location = new System.Drawing.Point(315, 132);
-            this.lblRaporTuru.Name = "lblRaporTuru";
-            this.lblRaporTuru.Size = new System.Drawing.Size(109, 28);
-            this.lblRaporTuru.TabIndex = 15;
-            this.lblRaporTuru.Text = "Rapor Türü";
-            // 
-            // cmbRaporTuru
-            // 
-            this.cmbRaporTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbRaporTuru.FormattingEnabled = true;
-            this.cmbRaporTuru.Location = new System.Drawing.Point(447, 136);
-            this.cmbRaporTuru.Name = "cmbRaporTuru";
-            this.cmbRaporTuru.Size = new System.Drawing.Size(335, 24);
-            this.cmbRaporTuru.TabIndex = 0;
-            this.cmbRaporTuru.SelectedIndexChanged += new System.EventHandler(this.cmbRaporTuru_SelectedIndexChanged);
-            // 
             // RaporlarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1302, 711);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblRaporTuru);
             this.Controls.Add(this.exportPdf);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnExcelAktar);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblDurum);
             this.Controls.Add(this.dgRapor);
@@ -557,7 +522,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -578,13 +542,17 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGetir;
+        private System.Windows.Forms.Button btnExcelAktar;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button exportPdf;
+        private System.Windows.Forms.Label lblRaporTuru;
+        private System.Windows.Forms.ComboBox cmbRaporTuru;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Logout;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button7;
@@ -596,11 +564,5 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnGetir;
-        private System.Windows.Forms.Button btnExcelAktar;
-        private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.Button exportPdf;
-        private System.Windows.Forms.Label lblRaporTuru;
-        private System.Windows.Forms.ComboBox cmbRaporTuru;
     }
 }

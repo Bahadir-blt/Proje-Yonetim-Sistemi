@@ -34,7 +34,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Logout = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -89,7 +88,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -121,7 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -165,8 +162,6 @@
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.button7);
@@ -190,7 +185,7 @@
             this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logout.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Logout.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Logout.Location = new System.Drawing.Point(56, 346);
+            this.Logout.Location = new System.Drawing.Point(56, 289);
             this.Logout.Margin = new System.Windows.Forms.Padding(4);
             this.Logout.Name = "Logout";
             this.Logout.Size = new System.Drawing.Size(207, 43);
@@ -208,7 +203,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.button10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button10.Location = new System.Drawing.Point(56, 289);
+            this.button10.Location = new System.Drawing.Point(57, 231);
             this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(207, 43);
@@ -218,24 +213,6 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.UseWaitCursor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button9
-            // 
-            this.button9.AutoSize = true;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button9.Location = new System.Drawing.Point(56, 238);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(207, 43);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Ayarlar";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.UseWaitCursor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -966,7 +943,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.InitialImage")));
-            this.pictureBox7.Location = new System.Drawing.Point(13, 354);
+            this.pictureBox7.Location = new System.Drawing.Point(17, 298);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 30);
@@ -979,7 +956,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(16, 297);
+            this.pictureBox6.Location = new System.Drawing.Point(17, 238);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(32, 30);
@@ -987,19 +964,6 @@
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.UseWaitCursor = true;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(16, 240);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 30);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.UseWaitCursor = true;
             // 
             // pictureBox4
             // 
@@ -1170,7 +1134,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1197,8 +1160,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button7;
