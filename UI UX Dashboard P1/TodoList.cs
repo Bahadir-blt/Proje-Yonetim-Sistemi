@@ -150,5 +150,10 @@ namespace UI_UX_Dashboard_P1
             login1.Show();                      // Göster
             this.Close();
         }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

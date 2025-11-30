@@ -221,6 +221,7 @@
             this.Logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Logout.UseVisualStyleBackColor = true;
             this.Logout.UseWaitCursor = true;
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
             // pictureBox7
             // 
@@ -541,7 +542,7 @@
             // 
             this.mnuCikis.Image = global::UI_UX_Dashboard_P1.Properties.Resources._2976286;
             this.mnuCikis.Name = "mnuCikis";
-            this.mnuCikis.Size = new System.Drawing.Size(224, 26);
+            this.mnuCikis.Size = new System.Drawing.Size(122, 26);
             this.mnuCikis.Text = "Çıkış";
             this.mnuCikis.Click += new System.EventHandler(this.mnuCikis_Click);
             // 
